@@ -1,4 +1,6 @@
 class Doctor
+  
+  require "pry"
   attr_reader :name
   @@all = []
   
@@ -20,6 +22,8 @@ class Doctor
   end
   
     def patients
+      binding.pry
+      
       appointments.collect {|appointment| appointment.patient}
     end
 end
