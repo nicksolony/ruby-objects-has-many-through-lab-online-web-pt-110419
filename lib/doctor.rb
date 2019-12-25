@@ -19,8 +19,7 @@ class Doctor
     Appointment.new(date,patient,self)
   end
   
-  def patients
-    appointments.collect {|appointment| appointment.patient}
-  end
-  
+    def genres
+      songs.collect {|song| song.genre}
+    end
 end
