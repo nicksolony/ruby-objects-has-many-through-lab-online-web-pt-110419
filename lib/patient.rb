@@ -10,4 +10,11 @@ class Patient
   def self.all
     @@all
   end
+  
+  def new_appointment(doctor,date)
+  #  binding.pry
+    Appointment.new(date,self,doctor)
+  end
+  
+  
 end
